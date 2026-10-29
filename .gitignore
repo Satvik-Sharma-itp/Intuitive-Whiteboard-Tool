@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (only used for tests, nothing is installed by default)
+node_modules/
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# icons/user/ holds icons people add through the palette. It is user data, so it is
+# not ignored here: commit it if you want to share those icons, or add it below.

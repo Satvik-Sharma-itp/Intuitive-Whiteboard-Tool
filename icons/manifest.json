@@ -1,0 +1,92 @@
+[
+    {
+        "name":  "FortiGate",
+        "label":  "FortiGate",
+        "vendor":  "fortinet",
+        "file":  "fortinet-fortigate.svg"
+    },
+    {
+        "name":  "FortiGate-VM",
+        "label":  "FortiGate-VM",
+        "vendor":  "fortinet",
+        "file":  "fortinet-fortigate-vm.svg"
+    },
+    {
+        "name":  "FortiWiFi",
+        "label":  "FortiWiFi",
+        "vendor":  "fortinet",
+        "file":  "fortinet-fortiwifi.svg"
+    },
+    {
+        "name":  "Router",
+        "label":  "Router",
+        "vendor":  "fortinet",
+        "file":  "fortinet-router.svg"
+    },
+    {
+        "name":  "FortiSwitch",
+        "label":  "FortiSwitch",
+        "vendor":  "fortinet",
+        "file":  "fortinet-fortiswitch.svg"
+    },
+    {
+        "name":  "Switching (generic)",
+        "label":  "Switch",
+        "vendor":  "fortinet",
+        "file":  "fortinet-switching.svg"
+    },
+    {
+        "name":  "FortiAP",
+        "label":  "FortiAP",
+        "vendor":  "fortinet",
+        "file":  "fortinet-fortiap.svg"
+    },
+    {
+        "name":  "Wireless Controller",
+        "label":  "Wireless Controller",
+        "vendor":  "fortinet",
+        "file":  "fortinet-wireless-controller.svg"
+    },
+    {
+        "name":  "FortiManager",
+        "label":  "FortiManager",
+        "vendor":  "fortinet",
+        "file":  "fortinet-fortimanager.svg"
+    },
+    {
+        "name":  "FortiAnalyzer",
+        "label":  "FortiAnalyzer",
+        "vendor":  "fortinet",
+        "file":  "fortinet-fortianalyzer.svg"
+    },
+    {
+        "name":  "FortiAuthenticator",
+        "label":  "FortiAuthenticator",
+        "vendor":  "fortinet",
+        "file":  "fortinet-fortiauthenticator.svg"
+    },
+    {
+        "name":  "FortiNAC",
+        "label":  "FortiNAC",
+        "vendor":  "fortinet",
+        "file":  "fortinet-fortinac.svg"
+    },
+    {
+        "name":  "FortiSASE",
+        "label":  "FortiSASE",
+        "vendor":  "fortinet",
+        "file":  "fortinet-fortisase.svg"
+    },
+    {
+        "name":  "FortiClient VPN",
+        "label":  "FortiClient VPN",
+        "vendor":  "fortinet",
+        "file":  "fortinet-forticlient-vpn.svg"
+    },
+    {
+        "name":  "SD-WAN",
+        "label":  "SD-WAN",
+        "vendor":  "fortinet",
+        "file":  "fortinet-sd-wan.svg"
+    }
+]

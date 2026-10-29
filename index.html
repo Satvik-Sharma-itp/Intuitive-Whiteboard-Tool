@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Intuitive Whiteboard</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="board"></canvas>
+  <textarea id="editor" hidden spellcheck="false"></textarea>
+
+  <header id="topbar">
+    <div id="brand" class="pill">
+      <a id="brandLogo" href="https://intuitive.ai" target="_blank" rel="noopener noreferrer" title="Visit intuitive.ai">
+        <img src="assets/intuitive-logo.png" alt="Intuitive" width="72" height="27" draggable="false">
+      </a>
+      <span id="brandName">Intuitive Whiteboard</span>
+    </div>
+    <input id="title" type="text" value="Untitled board" aria-label="Board title" spellcheck="false">
+    <div class="spacer"></div>
+    <div class="pill">
+      <button data-action="undo" data-icon="undo" title="Undo (Ctrl+Z)"></button>
+      <button data-action="redo" data-icon="redo" title="Redo (Ctrl+Y)"></button>
+    </div>
+    <div class="pill">
+      <button data-action="bg" data-icon="grid" title="Change background"></button>
+      <button data-action="exportPng" class="txt" title="Export as PNG">PNG</button>
+      <button data-action="saveJson" class="txt" title="Save board to a file">Save</button>
+      <button data-action="openJson" class="txt" title="Open a saved board">Open</button>
+      <button data-action="clear" data-icon="trash" title="Clear board"></button>
+    </div>
+  </header>
+
+  <nav id="tools" aria-label="Tools"></nav>
+  <div id="props" hidden></div>
+
+  <aside id="library" aria-label="Network devices">
+    <div class="libhead">
+      <strong>Network devices</strong>
+      <span class="libspace"></span>
+      <button id="libAdd" class="txt" title="Add your own icon (PNG, SVG, JPG, GIF or WebP, up to 2 MB). It is saved in the icons/user folder.">+ Add icon</button>
+      <button id="libClose" title="Close">✕</button>
+    </div>
+    <input id="libSearch" type="search" placeholder="Search devices…" spellcheck="false">
+    <div id="libBody"></div>
+    <p class="libhint">Click a device, then click the board - or drag it in. Use the link tool (C) to connect devices. Add your own symbols with + under User icons.</p>
+  </aside>
+
+  <div id="zoombar" class="pill">
+    <button data-action="zoomOut" data-icon="minus" title="Zoom out"></button>
+    <button data-action="zoomReset" class="txt" id="zoomLabel" title="Reset zoom">100%</button>
+    <button data-action="zoomIn" data-icon="plus" title="Zoom in"></button>
+    <button data-action="fit" data-icon="fit" title="Fit content"></button>
+  </div>
+
+  <div id="toast" role="status"></div>
+  <input type="file" id="imgInput" accept="image/*" hidden>
+  <input type="file" id="iconInput" accept="image/png,image/svg+xml,image/jpeg,image/gif,image/webp,.png,.svg,.jpg,.jpeg,.gif,.webp" multiple hidden>
+  <input type="file" id="jsonInput" accept="application/json,.json" hidden>
+  <script src="app.js"></script>
+</body>
+</html>
